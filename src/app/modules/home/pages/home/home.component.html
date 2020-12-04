@@ -6,9 +6,11 @@
         (click)="changeColor(color)"></div>
 </div>
 
-<div class="player" [ngStyle]="{'background-color': selectedColor}">
-  <div class="legs"></div>
-  <div class="back" ></div>
-  <div class="glass" ></div>
-  <div class="shadow" ></div>
+<div class="color-controler" [ngStyle]="{'background-color': selectedColor}">
+    <div class="player" [ngStyle]="{'background-color': selectedColor}">
+      <div class="legs" [ngStyle]="{'background-color': selectedColor}"></div>
+      <div class="back" [ngStyle]="{'background-color': selectedColor}"></div>
+      <div class="glass"></div>
+      <div class="shadow"></div>
+    </div>
 </div>
