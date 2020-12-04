@@ -6,6 +6,8 @@
     margin: 0;
 }
 
+///////////////////////////// CREW ////////////////////////////////////////////
+
 .player{
     background-color: inherit;
     filter:  brightness(.7) grayscale(.1);
@@ -144,4 +146,39 @@
       right: -40px;
       border-radius: 50%;
       z-index: 0;
+}
+
+///////////////////////// CREW END ////////////////////////////////////////////////////
+
+///////////////////////// SELECTOR ////////////////////////////////////////////////////
+.config{
+    display: flex;
+    // justify-self: center;
+}
+
+.selector {
+    background-color: #9fbba2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: .6rem;
+    width: 40%;
+    height: 100%;
+    place-items: center;
+    // padding: 2rem .5rem;
+    border: 10px solid #b8d4bb;
+    border-radius: 4px;
+    margin: 10rem 0 0 4rem;
+}
+
+.colorSelector{
+    width: 100px;
+    height: 100px;
+    margin: 1rem;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+.active{
+    transition: .2s;
+    transform: scale(1.2);
 }

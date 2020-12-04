@@ -27,9 +27,7 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    setTimeout(() => {
-      this.changeColor(this.allColors[5])
-    }, 10);
+    
   }
 
   changeColor(color: ColorsDTO){

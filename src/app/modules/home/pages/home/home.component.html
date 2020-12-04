@@ -1,16 +1,19 @@
-<div class="selector">
-    <div 
-        *ngFor="let color of allColors"
-        [ngClass]="{'active': selectedColor == color.color}"
-        [ngStyle]="{'background-color': color.color}"
-        (click)="changeColor(color)"></div>
-</div>
-
-<div class="color-controler" [ngStyle]="{'background-color': selectedColor}">
-    <div class="player" [ngStyle]="{'background-color': selectedColor}">
-      <div class="legs" [ngStyle]="{'background-color': selectedColor}"></div>
-      <div class="back" [ngStyle]="{'background-color': selectedColor}"></div>
-      <div class="glass"></div>
-      <div class="shadow"></div>
+<div class="config">
+    <div class="selector">
+        <div class="colorSelector"
+            *ngFor="let color of allColors"
+            [ngClass]="{'active': selectedColor == color.color}"
+            [ngStyle]="{'background-color': color.color}"
+            (click)="changeColor(color)"></div>
     </div>
+    
+    <div class="color-controler" [ngStyle]="{'background-color': selectedColor}">
+        <div class="player" [ngStyle]="{'background-color': selectedColor}">
+          <div class="legs" [ngStyle]="{'background-color': selectedColor}"></div>
+          <div class="back" [ngStyle]="{'background-color': selectedColor}"></div>
+          <div class="glass"></div>
+          <div class="shadow"></div>
+        </div>
+    </div>
+
 </div>
